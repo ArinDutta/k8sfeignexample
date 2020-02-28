@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @FeignClient(name="k8-image-service",fallback=HelloClientFallback.class)
 public interface HelloClientProxy {
 	
-	@GetMapping("/message/fetch")
+	@GetMapping("/hello/cloud")
 	public String getMessage();
 
 }
