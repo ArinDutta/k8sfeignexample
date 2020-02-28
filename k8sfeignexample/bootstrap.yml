@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    kubernetes:
+      config:
+        enabled: false
+        sources:
+          - namespace: default
+            name: k8-config
+      reload:
+        enabled: false
+---
+ribbon:
+  http:
+    client:
+      enabled: false        
