@@ -2,14 +2,14 @@ spring:
   cloud:
     kubernetes:
       config:
-        enabled: false
+        enabled: true
         sources:
           - namespace: default
             name: k8-config
       reload:
-        enabled: false
+        enabled: true
 ---
 ribbon:
   http:
     client:
-      enabled: false        
+      enabled: true        
